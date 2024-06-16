@@ -1,22 +1,13 @@
+import 'react-native-gesture-handler';
 import React, { FC } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { SOME_API_KEY } from '@env';
+import { NavigationContainer } from '@react-navigation/native';
 
-interface Props {}
+import { StackNavigator } from '@/presentation/navigation/StackNavigator';
 
-export const App: FC<Props> = () => {
+export const App: FC = () => {
   return (
-    <View style={styles.container}>
-      <Text>App</Text>
-      <Text>ENV variable: {SOME_API_KEY}</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
