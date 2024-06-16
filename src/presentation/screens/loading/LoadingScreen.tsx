@@ -1,17 +1,12 @@
 import React, { FC } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import { SOME_API_KEY } from '@env';
+import { View, StyleSheet, ActivityIndicator } from 'react-native';
 
 interface Props {}
 
 export const LoadingScreen: FC<Props> = () => {
   return (
     <View style={styles.container}>
-      <Text>LoadingScreen</Text>
-      <Text>ENV variable: {SOME_API_KEY}</Text>
-      <Ionicons name="accessibility" size={30} color="black" />
+      <ActivityIndicator size="large" color="black" />
     </View>
   );
 };

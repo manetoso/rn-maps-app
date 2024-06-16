@@ -3,11 +3,14 @@ import React, { FC } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { StackNavigator } from '@/presentation/navigation/StackNavigator';
+import { PermissionsChecker } from '@/presentation/providers/PermissionsChecker';
 
 export const App: FC = () => {
   return (
     <NavigationContainer>
-      <StackNavigator />
+      <PermissionsChecker>
+        <StackNavigator />
+      </PermissionsChecker>
     </NavigationContainer>
   );
 };
