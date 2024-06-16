@@ -9,7 +9,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-  [GMSServices provideAPIKey:@"AIzaSyAiPHGqfn0zhyTf9QbKS4WY8YXXSOSTVbE"]; // add this line using the api key obtained from Google Console
+  [GMSServices provideAPIKey:@"API_KEY"]; // add this line using the api key obtained from Google Console
 
   self.moduleName = @"mapsApp";
   // You can add your custom initial props in the dictionary below.

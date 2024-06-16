@@ -19,6 +19,15 @@ yarn install
 ## Step 2: Set ENV variables
 
 Clone the `.env.template` file and set-up yours environment variables.
+For this repo you must generate and use your own maps API_KEYS from Google Maps Platform and paste it in these files:
+
+```bash
+# iOS
+ios/mapsApp/AppDelegate.mm # Line 12
+
+# Android
+android/app/src/main/AndroidManifest.xml # Line 19
+```
 
 ## Step 3: Start the Metro Server
 
